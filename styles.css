@@ -1,0 +1,135 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+    padding: 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Banner */
+.banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.banner-container img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Container untuk produk */
+.product-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tampil 2 produk di perangkat mobile */
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tampil 3 produk di laptop */
+@media (min-width: 769px) {
+    .product-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.product {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Gaya halaman produk detail */
+.product-detail-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.product-detail-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: #777;
+}
+
+.order-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.order-button:hover {
+    background-color: #218838;
+}
+
+/* Produk Terkait */
+.related-products {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.related-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
