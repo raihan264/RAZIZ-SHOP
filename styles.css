@@ -106,6 +106,7 @@ p {
     color: #777;
 }
 
+
 .order-button {
     background-color: #28a745;
     color: white;
@@ -119,17 +120,4 @@ p {
 
 .order-button:hover {
     background-color: #218838;
-}
-
-/* Produk Terkait */
-.related-products {
-    padding: 40px;
-    background-color: #f9f9f9;
-}
-
-.related-products h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
 }
